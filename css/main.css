@@ -229,7 +229,28 @@ footer ul li:last-child {
     background: url("../images/sliders/grano.png");
     top: 0;
 }
-
+.item{
+    height: 585px;
+    background-size: cover;
+}
+.item#slide1{
+    background-position: center;
+}
+.item#slide2{
+background-position: center 13%;
+}
+.item#slide3{
+    background-position: center 42%;
+}
+.item#slide4{
+    background-position: center 35%;
+}
+.item#slide5{
+    background-position: center 18%;
+}
+.item#slide6{
+    background-position: center 41%;
+}
 .slide-row {
     padding: 0;
 }
