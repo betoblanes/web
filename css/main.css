@@ -486,7 +486,9 @@ input:focus, textarea:focus {
 .row > .column {
     padding: 0 8px;
 }
-
+.modal-backdrop{
+    z-index: 0;
+}
 .row:after {
     content: "";
     display: table;

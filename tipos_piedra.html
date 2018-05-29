@@ -121,7 +121,7 @@
 </div>
 <!-- The Modal/Lightbox -->
 <div id="blanca" class="modal">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <span class="close cursor" onclick="closeModal('blanca')">&times;</span>
     <div class="modal-content">
         <div class="mySlides">
             <div class="numbertext">1 / 4: Piedra blanca</div>
@@ -154,7 +154,7 @@
     </div>
 </div>
 <div id="bateig" class="modal">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <span class="close cursor" onclick="closeModal('blanca')">&times;</span>
     <div class="modal-content">
         <div class="mySlides">
             <div class="numbertext">1 / 4: Piedra blanca</div>
@@ -296,20 +296,17 @@
     }
 </style>
 <!--https://www.w3schools.com/howto/howto_js_lightbox.asp-->
-
 <script>
     // Open the Modal
     function openModal(modalId) {
-
-
         $('#'+modalId).modal('show');
     }
 
     // Close the Modal
-    function closeModal() {
-        document.getElementById('myModal').style.display = "none";
+    function closeModal(modalId) {
+        $('#'+modalId).modal('hide');
     }
-
+    //hay que identificar el modal de alguna forma
     var slideIndex = 1;
     showSlides(slideIndex);
 
@@ -334,10 +331,10 @@
             slides[i].style.display = "none";
         }
         for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
+            dots[i].className = dots[i].className.replace("active", "");
         }
         slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
+        dots[slideIndex-1].className += "active";
         captionText.innerHTML = dots[slideIndex-1].alt;
     }
 </script>
