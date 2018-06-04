@@ -73,20 +73,20 @@
     </div>
 </div>
 <div class="galeria_acabados">
-    <div class="col-sm-6 col-md-6 col-lg-4 text-center acabado seco">
+    <div class="col-sm-6 col-md-6 col-lg-4 text-center acabado seco" onclick="openModal('seco');currentSlide(1,'mySlides_seco')">
         <div class="over"></div>
         <h4>PIEDRA EN SECO</h4>
         <p>Modo de construcción del muro
             colocando las piedras careadas
             sin junta de material.</p>
     </div>
-    <div class="col-sm-6 col-md-6 col-lg-4 text-center acabado rejuntado">
+    <div class="col-sm-6 col-md-6 col-lg-4 text-center acabado rejuntado" onclick="openModal('rejuntado');currentSlide(1,'mySlides_rejuntado')">
         <div class="over"></div>
         <h4>REJUNTADO</h4>
         <p>Modo de colocación de las piedras
             careadas con junta de material.</p>
     </div>
-    <div class="col-sm-6 col-md-6 col-lg-4 text-center acabado rustico">
+    <div class="col-sm-6 col-md-6 col-lg-4 text-center acabado rustico" onclick="openModal('rustico');currentSlide(1,'mySlides_rustico')">
         <div class="over"></div>
         <h4>RÚSTICO</h4>
         <p>Este tipo de acabado se
@@ -94,14 +94,14 @@
             y puede ser tanto con junta
             o sin junta de material.</p>
     </div>
-    <div class="col-sm-6 col-md-6 col-lg-4 text-center acabado canteria">
+    <div class="col-sm-6 col-md-6 col-lg-4 text-center acabado canteria" onclick="openModal('canteria');currentSlide(1,'mySlides_canteria')">
         <div class="over"></div>
         <h4>CANTERÍA</h4>
         <p>Realización de trabajos a medida.
             Piedras cantoneras para ventanas
             o puertas, chimeneas, etc...</p>
     </div>
-    <div class="col-sm-6 col-md-6 col-lg-4 text-center acabado remate">
+    <div class="col-sm-6 col-md-6 col-lg-4 text-center acabado remate" onclick="openModal('remate');currentSlide(1,'mySlides_remate')">
         <div class="over"></div>
         <h4>DIFERENTES REMATES DE MURO</h4>
         <p>Lorem ipsum, dolor is amet
@@ -109,6 +109,202 @@
     </div>
     <div class="hidden-xs col-sm-6 col-md-6 col-lg-4 text-center acabado relleno">
         <img src="images/acabados/logo.png" alt="Marsignes">
+    </div>
+</div>
+<!-- The Modal/Lightbox -->
+<div id="seco" class="modal">
+    <span class="close cursor" onclick="closeModal('seco')">&times;</span>
+    <div class="modal-content">
+        <div class="mySlides_seco">
+            <div class="numbertext">1 / 4: Piedra blanca</div>
+            <img src="images/acabados/seco/seco_1.jpg" style="width:100%">
+        </div>
+        <div class="mySlides_seco">
+            <div class="numbertext">2 / 4: Piedra blanca</div>
+            <img src="images/acabados/seco/seco_2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides_seco">
+            <div class="numbertext">3 / 4: Piedra blanca</div>
+            <img src="images/acabados/seco/seco_3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides_seco">
+            <div class="numbertext">4 / 4: Piedra blanca</div>
+            <img src="images/acabados/seco/seco_4.JPG" style="width:100%">
+        </div>
+        <div class="mySlides_seco">
+            <div class="numbertext">4 / 4: Piedra blanca</div>
+            <img src="images/acabados/seco/seco_5.jpg" style="width:100%">
+        </div>
+        <div class="mySlides_seco">
+            <div class="numbertext">4 / 4: Piedra blanca</div>
+            <img src="images/acabados/seco/seco_6.JPG" style="width:100%">
+        </div>
+        <div class="mySlides_seco">
+            <div class="numbertext">4 / 4: Piedra blanca</div>
+            <img src="images/acabados/seco/seco_7.jpg" style="width:100%">
+        </div>
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1, 'mySlides_seco')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'mySlides_seco')">&#10095;</a>
+
+        <!-- Caption text -->
+        <!--<div class="caption-container">-->
+        <!--<p id="caption">Piedra Blanca</p>-->
+        <!--</div>-->
+    </div>
+</div>
+<div id="rejuntado" class="modal">
+    <span class="close cursor" onclick="closeModal('rejuntado')">&times;</span>
+    <div class="modal-content">
+        <div class="mySlides_rejuntado">
+            <div class="numbertext">1 / 4: Piedra bateig</div>
+            <img src="images/acabados/rejuntado/rejuntado_1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides_rejuntado">
+            <div class="numbertext">2 / 4: Piedra bateig</div>
+            <img src="images/acabados/rejuntado/rejuntado_2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides_rejuntado">
+            <div class="numbertext">3 / 4: Piedra bateig</div>
+            <img src="images/acabados/rejuntado/rejuntado_3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides_rejuntado">
+            <div class="numbertext">4 / 4: Piedra bateig</div>
+            <img src="images/acabados/rejuntado/rejuntado_4.jpg" style="width:100%">
+        </div>
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1,'mySlides_rejuntado')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'mySlides_rejuntado')">&#10095;</a>
+
+        <!-- Caption text -->
+        <!--<div class="caption-container">-->
+        <!--<p id="caption">Piedra Blanca</p>-->
+        <!--</div>-->
+    </div>
+</div>
+<div id="rustico" class="modal">
+    <span class="close cursor" onclick="closeModal('rustico')">&times;</span>
+    <div class="modal-content">
+        <div class="mySlides_rustico">
+            <div class="numbertext">1 / 4: Piedra bateig</div>
+            <img src="images/acabados/rustico/rustico_1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides_rustico">
+            <div class="numbertext">2 / 4: Piedra bateig</div>
+            <img src="images/acabados/rustico/rustico_2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides_rustico">
+            <div class="numbertext">3 / 4: Piedra bateig</div>
+            <img src="images/acabados/rustico/rustico_3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides_rustico">
+            <div class="numbertext">4 / 4: Piedra bateig</div>
+            <img src="images/acabados/rustico/rustico_4.jpg" style="width:100%">
+        </div>
+        <div class="mySlides_rustico">
+            <div class="numbertext">4 / 4: Piedra bateig</div>
+            <img src="images/acabados/rustico/rustico_5.jpg" style="width:100%">
+        </div>
+        <div class="mySlides_rustico">
+            <div class="numbertext">4 / 4: Piedra bateig</div>
+            <img src="images/acabados/rustico/rustico_6.jpg" style="width:100%">
+        </div>
+        <div class="mySlides_rustico">
+            <div class="numbertext">4 / 4: Piedra bateig</div>
+            <img src="images/acabados/rustico/rustico_7.jpg" style="width:100%">
+        </div>
+        <div class="mySlides_rustico">
+            <div class="numbertext">4 / 4: Piedra bateig</div>
+            <img src="images/acabados/rustico/rustico_8.jpg" style="width:100%">
+        </div>
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1,'mySlides_rustico')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'mySlides_rustico')">&#10095;</a>
+
+        <!-- Caption text -->
+        <!--<div class="caption-container">-->
+        <!--<p id="caption">Piedra Blanca</p>-->
+        <!--</div>-->
+    </div>
+</div>
+<div id="canteria" class="modal">
+    <span class="close cursor" onclick="closeModal('canteria')">&times;</span>
+    <div class="modal-content">
+        <div class="mySlides_canteria">
+            <div class="numbertext">1 / 4: Piedra bateig</div>
+            <img src="images/piedras/roja/roja_1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides_canteria">
+            <div class="numbertext">2 / 4: Piedra bateig</div>
+            <img src="images/acabados/canteria/canteria_1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides_canteria">
+            <div class="numbertext">3 / 4: Piedra bateig</div>
+            <img src="images/acabados/canteria/canteria_2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides_canteria">
+            <div class="numbertext">4 / 4: Piedra bateig</div>
+            <img src="images/acabados/canteria/canteria_3.jpg" style="width:100%">
+        </div>
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1,'mySlides_canteria')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'mySlides_canteria')">&#10095;</a>
+
+        <!-- Caption text -->
+        <!--<div class="caption-container">-->
+        <!--<p id="caption">Piedra Blanca</p>-->
+        <!--</div>-->
+    </div>
+</div>
+<div id="remate" class="modal">
+    <span class="close cursor" onclick="closeModal('remate')">&times;</span>
+    <div class="modal-content">
+        <div class="mySlides_remate">
+            <div class="numbertext">1 / 4: Piedra bateig</div>
+            <img src="images/acabados/remate/remate_1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides_remate">
+            <div class="numbertext">2 / 4: Piedra bateig</div>
+            <img src="images/acabados/remate/remate_2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides_remate">
+            <div class="numbertext">3 / 4: Piedra bateig</div>
+            <img src="images/acabados/remate/remate_3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides_remate">
+            <div class="numbertext">4 / 4: Piedra bateig</div>
+            <img src="images/acabados/remate/remate_4.jpg" style="width:100%">
+        </div>
+        <div class="mySlides_remate">
+            <div class="numbertext">4 / 4: Piedra bateig</div>
+            <img src="images/acabados/remate/remate_5.jpg" style="width:100%">
+        </div>
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1,'mySlides_remate')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'mySlides_remate')">&#10095;</a>
+
+        <!-- Caption text -->
+        <!--<div class="caption-container">-->
+        <!--<p id="caption">Piedra Blanca</p>-->
+        <!--</div>-->
     </div>
 </div>
 <div class="trabajos_realizados alt">
@@ -205,7 +401,53 @@
         </div>
     </div>
 </section>
+<!--https://www.w3schools.com/howto/howto_js_lightbox.asp-->
+<script>
+    // Open the Modal
+    function openModal(modalId) {
+        $('#' + modalId).modal('show');
+    }
 
+    // Close the Modal
+    function closeModal(modalId) {
+        $('#' + modalId).modal('hide');
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n,slideId) {
+        showSlides(slideIndex += n, slideId);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n, slideId) {
+        showSlides(slideIndex = n, slideId);
+    }
+
+    function showSlides(n, slideId) {
+        var i;
+        var slides = document.getElementsByClassName(slideId);
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace("active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += "active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+</script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

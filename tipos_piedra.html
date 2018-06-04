@@ -75,7 +75,7 @@
     </div>
 </div>
 <div class="galeria_tipos">
-    <div class="col-sm-6 col-md-6 col-lg-4 text-center piedra blanca" onclick="openModal('blanca');currentSlide(1)">
+    <div class="col-sm-6 col-md-6 col-lg-4 text-center piedra blanca" onclick="openModal('blanca');currentSlide(1,'mySlides_blanca')">
         <div class="over"></div>
         <h4>Piedra Blanca</h4>
         <p>Piedra versátil, muy utilizada
@@ -83,7 +83,7 @@
             grandes longitudes de muro
             y contenciones de terreno.</p>
     </div>
-    <div class="col-sm-6 col-md-6 col-lg-4 text-center piedra bateig" onclick="openModal('bateig');">
+    <div class="col-sm-6 col-md-6 col-lg-4 text-center piedra bateig" onclick="openModal('bateig');currentSlide(1, 'mySlides_bateig');">
         <div class="over"></div>
         <h4>Piedra de "Bateig"</h4>
         <p>Piedra maleable utilizada
@@ -92,7 +92,7 @@
             Revestimientos interiores, arcos,
             pilares, entradas…</p>
     </div>
-    <div class="col-sm-6 col-md-6 col-lg-4 text-center piedra marron">
+    <div class="col-sm-6 col-md-6 col-lg-4 text-center piedra marron" onclick="openModal('marron');currentSlide(1, 'mySlides_marron');">
         <div class="over"></div>
         <h4>Piedra MARRÓN</h4>
         <p>En esta variedad conviven
@@ -101,14 +101,14 @@
             es el más utilizado después de la
             piedra blanca, por su mayor calidad.</p>
     </div>
-    <div class="col-sm-6 col-md-6 col-lg-4 text-center piedra roja">
+    <div class="col-sm-6 col-md-6 col-lg-4 text-center piedra roja" onclick="openModal('roja');currentSlide(1, 'mySlides_roja');">
         <div class="over"></div>
         <h4>Piedra Roja</h4>
         <p>La Roja es una piedra
             muy aconsejada para muros
             con acabados rústicos.</p>
     </div>
-    <div class="col-sm-6 col-md-6 col-lg-4 text-center piedra desmonte">
+    <div class="col-sm-6 col-md-6 col-lg-4 text-center piedra desmonte" onclick="openModal('desmonte');currentSlide(1, 'mySlides_desmonte');">
         <div class="over"></div>
         <h4>Piedra de "Desmonte"</h4>
         <p>Piedras utilizadas en diferentes
@@ -123,29 +123,29 @@
 <div id="blanca" class="modal">
     <span class="close cursor" onclick="closeModal('blanca')">&times;</span>
     <div class="modal-content">
-        <div class="mySlides">
+        <div class="mySlides_blanca">
             <div class="numbertext">1 / 4: Piedra blanca</div>
             <img src="images/piedras/blanca/blanca_thumbnail.JPG" style="width:100%">
         </div>
 
-        <div class="mySlides">
+        <div class="mySlides_blanca">
             <div class="numbertext">2 / 4: Piedra blanca</div>
             <img src="images/piedras/blanca/DSC00132.JPG" style="width:100%">
         </div>
 
-        <div class="mySlides">
+        <div class="mySlides_blanca">
             <div class="numbertext">3 / 4: Piedra blanca</div>
             <img src="images/piedras/blanca/DSC00133.JPG" style="width:100%">
         </div>
 
-        <div class="mySlides">
+        <div class="mySlides_blanca">
             <div class="numbertext">4 / 4: Piedra blanca</div>
             <img src="images/piedras/blanca/PIC_0001.JPG" style="width:100%">
         </div>
 
         <!-- Next/previous controls -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="prev" onclick="plusSlides(-1, 'mySlides_blanca')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'mySlides_blanca')">&#10095;</a>
 
         <!-- Caption text -->
         <!--<div class="caption-container">-->
@@ -154,31 +154,134 @@
     </div>
 </div>
 <div id="bateig" class="modal">
-    <span class="close cursor" onclick="closeModal('blanca')">&times;</span>
+    <span class="close cursor" onclick="closeModal('bateig')">&times;</span>
     <div class="modal-content">
-        <div class="mySlides">
-            <div class="numbertext">1 / 4: Piedra blanca</div>
-            <img src="images/piedras/blanca/blanca_thumbnail.JPG" style="width:100%">
+        <div class="mySlides_bateig">
+            <div class="numbertext">1 / 4: Piedra bateig</div>
+            <img src="images/piedras/bateig/bateig_1.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">2 / 4: Piedra blanca</div>
-            <img src="images/piedras/blanca/DSC00132.JPG" style="width:100%">
+        <div class="mySlides_bateig">
+            <div class="numbertext">2 / 4: Piedra bateig</div>
+            <img src="images/piedras/bateig/bateig_2.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">3 / 4: Piedra blanca</div>
-            <img src="images/piedras/blanca/DSC00133.JPG" style="width:100%">
+        <div class="mySlides_bateig">
+            <div class="numbertext">3 / 4: Piedra bateig</div>
+            <img src="images/piedras/bateig/bateig_3.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">4 / 4: Piedra blanca</div>
-            <img src="images/piedras/blanca/PIC_0001.JPG" style="width:100%">
+        <div class="mySlides_bateig">
+            <div class="numbertext">4 / 4: Piedra bateig</div>
+            <img src="images/piedras/bateig/bateig_4.jpg" style="width:100%">
         </div>
 
         <!-- Next/previous controls -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="prev" onclick="plusSlides(-1,'mySlides_bateig')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'mySlides_bateig')">&#10095;</a>
+
+        <!-- Caption text -->
+        <!--<div class="caption-container">-->
+        <!--<p id="caption">Piedra Blanca</p>-->
+        <!--</div>-->
+    </div>
+</div>
+<div id="marron" class="modal">
+    <span class="close cursor" onclick="closeModal('marron')">&times;</span>
+    <div class="modal-content">
+        <div class="mySlides_marron">
+            <div class="numbertext">1 / 4: Piedra bateig</div>
+            <img src="images/piedras/marron/marron_1.JPG" style="width:100%">
+        </div>
+
+        <div class="mySlides_marron">
+            <div class="numbertext">2 / 4: Piedra bateig</div>
+            <img src="images/piedras/marron/marron_2.JPG" style="width:100%">
+        </div>
+
+        <div class="mySlides_marron">
+            <div class="numbertext">3 / 4: Piedra bateig</div>
+            <img src="images/piedras/marron/marron_3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides_marron">
+            <div class="numbertext">4 / 4: Piedra bateig</div>
+            <img src="images/piedras/marron/marron_4.jpg" style="width:100%">
+        </div>
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1,'mySlides_marron')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'mySlides_marron')">&#10095;</a>
+
+        <!-- Caption text -->
+        <!--<div class="caption-container">-->
+        <!--<p id="caption">Piedra Blanca</p>-->
+        <!--</div>-->
+    </div>
+</div>
+<div id="roja" class="modal">
+    <span class="close cursor" onclick="closeModal('roja')">&times;</span>
+    <div class="modal-content">
+        <div class="mySlides_roja">
+            <div class="numbertext">1 / 4: Piedra bateig</div>
+            <img src="images/piedras/roja/roja_1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides_roja">
+            <div class="numbertext">2 / 4: Piedra bateig</div>
+            <img src="images/piedras/roja/roja_2.JPG" style="width:100%">
+        </div>
+
+        <div class="mySlides_roja">
+            <div class="numbertext">3 / 4: Piedra bateig</div>
+            <img src="images/piedras/roja/roja_3.JPG" style="width:100%">
+        </div>
+
+        <div class="mySlides_roja">
+            <div class="numbertext">4 / 4: Piedra bateig</div>
+            <img src="images/piedras/roja/roja_4.jpg" style="width:100%">
+        </div>
+        <div class="mySlides_roja">
+            <div class="numbertext">4 / 4: Piedra bateig</div>
+            <img src="images/piedras/roja/roja_5.jpg" style="width:100%">
+        </div>
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1,'mySlides_roja')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'mySlides_roja')">&#10095;</a>
+
+        <!-- Caption text -->
+        <!--<div class="caption-container">-->
+        <!--<p id="caption">Piedra Blanca</p>-->
+        <!--</div>-->
+    </div>
+</div>
+<div id="desmonte" class="modal">
+    <span class="close cursor" onclick="closeModal('desmonte')">&times;</span>
+    <div class="modal-content">
+        <div class="mySlides_desmonte">
+            <div class="numbertext">1 / 4: Piedra bateig</div>
+            <img src="images/piedras/desmonte/desmonte_1.JPG" style="width:100%">
+        </div>
+
+        <div class="mySlides_desmonte">
+            <div class="numbertext">2 / 4: Piedra bateig</div>
+            <img src="images/piedras/desmonte/desmonte_2.JPG" style="width:100%">
+        </div>
+
+        <div class="mySlides_desmonte">
+            <div class="numbertext">3 / 4: Piedra bateig</div>
+            <img src="images/piedras/desmonte/desmonte_3.JPG" style="width:100%">
+        </div>
+
+        <div class="mySlides_desmonte">
+            <div class="numbertext">4 / 4: Piedra bateig</div>
+            <img src="images/piedras/desmonte/desmonte_4.JPG" style="width:100%">
+        </div>
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1,'mySlides_desmonte')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'mySlides_desmonte')">&#10095;</a>
 
         <!-- Caption text -->
         <!--<div class="caption-container">-->
@@ -274,8 +377,11 @@
                 © Murs Signes 2015 | Aviso legal
             </div>
             <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-                <a href='https://business.facebook.com/Murs-Signes-708793455977949' target='_blank'><i class="fa fa-facebook-square fa-2x"></i></a>
-                <a href='http://murssignes.blogspot.com.es/' target='_blank'><img src="images/blogger-rect.svg" alt="Blogger" width="24" style="margin-top: -12px;"></a>
+                <a href='https://business.facebook.com/Murs-Signes-708793455977949' target='_blank'><i
+                        class="fa fa-facebook-square fa-2x"></i></a>
+                <a href='http://murssignes.blogspot.com.es/' target='_blank'><img src="images/blogger-rect.svg"
+                                                                                  alt="Blogger" width="24"
+                                                                                  style="margin-top: -12px;"></a>
             </div>
         </div>
     </div>
@@ -291,7 +397,7 @@
 <script src="js/main.js"></script>
 
 <style>
-    .modal-backdrop{
+    .modal-backdrop {
         z-index: 0 !important;
     }
 </style>
@@ -299,43 +405,47 @@
 <script>
     // Open the Modal
     function openModal(modalId) {
-        $('#'+modalId).modal('show');
+        $('#' + modalId).modal('show');
     }
 
     // Close the Modal
     function closeModal(modalId) {
-        $('#'+modalId).modal('hide');
+        $('#' + modalId).modal('hide');
     }
-    //hay que identificar el modal de alguna forma
+
     var slideIndex = 1;
     showSlides(slideIndex);
 
     // Next/previous controls
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
+    function plusSlides(n,slideId) {
+        showSlides(slideIndex += n, slideId);
     }
 
     // Thumbnail image controls
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
+    function currentSlide(n, slideId) {
+        showSlides(slideIndex = n, slideId);
     }
 
-    function showSlides(n) {
+    function showSlides(n, slideId) {
         var i;
-        var slides = document.getElementsByClassName("mySlides");
+        var slides = document.getElementsByClassName(slideId);
         var dots = document.getElementsByClassName("demo");
         var captionText = document.getElementById("caption");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
         for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace("active", "");
         }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += "active";
-        captionText.innerHTML = dots[slideIndex-1].alt;
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += "active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
     }
 </script>
 </body>
